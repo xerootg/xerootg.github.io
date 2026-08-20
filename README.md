@@ -17,7 +17,7 @@ sudo pacman-key --lsign-key "$(curl -fsSL https://xerootg.github.io/xerootg.asc 
 sudo tee -a /etc/pacman.conf > /dev/null <<'EOF'
 
 [custom]
-Server = https://xerootg.github.io/archlinux
+Server = https://github.com/xerootg/arch/releases/download/custom-repo
 SigLevel = Required DatabaseOptional
 
 [ghidra]
@@ -41,27 +41,36 @@ fail. Prefer it over the copy above.
 its own keyring and still refuses every package until the key is locally signed
 as trusted.
 
-`[custom]` is served from this repo. `[ghidra]` and `[orca]` hold single packages
-too large to push here (GitHub refuses any pushed file over 100 MB), so they are
-served from releases on [xerootg/arch](https://github.com/xerootg/arch) instead.
+All three repos are served from GitHub Releases on
+[xerootg/arch](https://github.com/xerootg/arch). They used to be split by size:
+GitHub refuses any pushed file over 100 MB, so `ghidra-noprompt` and
+`orca-slicer-git` could not live in this repo and needed their own. Release
+assets allow 2 GB, so that constraint is gone.
+
+**`https://xerootg.github.io/archlinux` no longer exists.** Packages were removed
+from this repository entirely — deleting them in an ordinary commit would have
+reclaimed nothing, since git keeps every blob it has ever seen, which is how this
+repo once reached 8.39 GB. Release assets can actually be deleted, so superseded
+packages are pruned on every build instead of accumulating.
+
+If your `pacman.conf` still points at the old URL, `enroll.sh client` rewrites it
+in place.
 
 ## What is in this repo
 
 | path | what it is |
 |---|---|
-| `archlinux/` | the `[custom]` pacman repo: packages, `custom.db`, and a `.sig` beside each |
 | `xerootg.asc` | the public signing key, exported from the key that actually signs |
 | `index.html` | the generated package listing |
 | `data/packages.csv` | current contents of every repo, one row per package |
 | `data/changes.csv` | append-only log of adds, updates and removals |
 | `data/state.json` | last check time and a digest used to skip empty commits |
 
-Everything except this file is generated. `archlinux/` is written by
-`build-pacman-repo`; the rest by
+Everything except this file is generated. It is written by
 [`build-repo-index.py`](https://github.com/xerootg/arch/blob/main/.github/scripts/build-repo-index.py),
 which reads each repo's pacman database and rewrites the page from it. Do not
 hand-edit them — the next run overwrites the lot.
 
-`.nojekyll` keeps GitHub Pages serving these files statically. There is no build
-step between publishing a package and it being downloadable, which matters when
-the site is mostly a few hundred megabytes of `.pkg.tar.zst`.
+`.nojekyll` keeps GitHub Pages serving these files statically, with no build step
+in the way. The whole repository is now about 46 KB of text — packages live in
+releases, so it has no way to grow the way it did before.
