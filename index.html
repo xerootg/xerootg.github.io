@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xero&#x27;s package feed</title>
+<meta name="description" content="Prebuilt Arch Linux packages I use or maintain, rebuilt automatically and served straight from GitHub.">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --panel: #f6f8fa;
+  --panel-border: #d8dee4;
+  --text: #1f2328;
+  --muted: #59636e;
+  --accent: #0969da;
+  --code-bg: #f0f3f6;
+  --row-hover: #f0f3f6;
+  --added: #1a7f37;
+  --updated: #9a6700;
+  --removed: #cf222e;
+  --seeded: #59636e;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --panel: #151b23;
+    --panel-border: #3d444d;
+    --text: #e6edf3;
+    --muted: #9198a1;
+    --accent: #4493f8;
+    --code-bg: #151b23;
+    --row-hover: #151b23;
+    --added: #3fb950;
+    --updated: #d29922;
+    --removed: #f85149;
+    --seeded: #9198a1;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 2.5rem 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+main { max-width: 1100px; margin: 0 auto; }
+h1 { font-size: 2rem; margin: 0 0 .35rem; letter-spacing: -.02em; }
+h2 { font-size: 1.3rem; margin: 2.75rem 0 .5rem; letter-spacing: -.01em; }
+h2 code { font-size: 1.15rem; }
+p { margin: .5rem 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.tagline { color: var(--muted); margin-bottom: 1.25rem; max-width: 62ch; }
+.stamps {
+  display: flex; flex-wrap: wrap; gap: .5rem 1.5rem;
+  padding: .75rem 1rem; margin: 0 0 2rem;
+  background: var(--panel); border: 1px solid var(--panel-border); border-radius: 6px;
+  font-size: .875rem;
+}
+.stamps div { display: flex; gap: .4rem; }
+.stamps .label { color: var(--muted); }
+.stamps .value { font-variant-numeric: tabular-nums; }
+.note { color: var(--muted); font-size: .925rem; max-width: 78ch; }
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+code { background: var(--code-bg); padding: .12em .35em; border-radius: 4px; font-size: .875em; }
+pre {
+  position: relative;
+  background: var(--panel); border: 1px solid var(--panel-border);
+  border-radius: 6px; padding: 1rem; overflow-x: auto;
+  font-size: .85rem; line-height: 1.55; margin: .75rem 0;
+}
+pre code { background: none; padding: 0; font-size: inherit; }
+.copy {
+  position: absolute; top: .5rem; right: .5rem;
+  background: var(--bg); color: var(--muted);
+  border: 1px solid var(--panel-border); border-radius: 5px;
+  padding: .2rem .55rem; font-size: .75rem; cursor: pointer;
+}
+.copy:hover { color: var(--text); }
+.scroll { overflow-x: auto; margin: .9rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: .875rem; }
+th, td { text-align: left; padding: .5rem .7rem; border-bottom: 1px solid var(--panel-border); }
+th {
+  font-size: .75rem; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--muted); font-weight: 600; white-space: nowrap;
+}
+tbody tr:hover { background: var(--row-hover); }
+td { vertical-align: top; }
+td.name { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: nowrap; }
+td.ver { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: nowrap; font-size: .825rem; }
+td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+td.date { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--muted); }
+/* Description under the name rather than in its own column. Package names here
+   run to 44 characters, and eight columns of that width pushed the last one out
+   of the scroll box entirely. */
+td.pkg { min-width: 24ch; }
+td.pkg .pkgname {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 600; white-space: nowrap;
+}
+td.pkg .pkgdesc {
+  color: var(--muted); font-size: .8rem; line-height: 1.45;
+  margin-top: .15rem; max-width: 58ch;
+}
+.count { color: var(--muted); font-weight: 400; font-size: .9rem; }
+.event { font-weight: 600; font-size: .8rem; text-transform: lowercase; }
+.event.added { color: var(--added); }
+.event.updated { color: var(--updated); }
+.event.removed { color: var(--removed); }
+.event.seeded { color: var(--seeded); }
+.stale {
+  border-left: 3px solid var(--updated); padding-left: .75rem;
+  color: var(--muted); font-size: .9rem;
+}
+footer {
+  margin-top: 3.5rem; padding-top: 1.25rem;
+  border-top: 1px solid var(--panel-border);
+  color: var(--muted); font-size: .85rem;
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Xero&#x27;s package feed</h1>
+<p class="tagline">Prebuilt Arch Linux packages I use or maintain, rebuilt automatically and served straight from GitHub.</p>
+<div class="stamps">
+<div><span class="label">Last checked</span><span class="value">2026-08-20 06:05:35 UTC</span></div>
+<div><span class="label">Last change</span><span class="value">2026-08-20 06:05:35 UTC</span></div>
+<div><span class="label">Packages</span><span class="value">25</span></div>
+<div><span class="label">Total download</span><span class="value">740.4 MiB</span></div>
+<div><span class="label">Signed by</span><span class="value"><code>455DF147BCC82C29</code></span></div>
+</div>
+<h2 id="install">Adding these repos</h2>
+<p class="note">Paste this into a terminal. It trusts the signing key, appends all 3 repositories to <code>/etc/pacman.conf</code>, and refreshes the package lists.</p>
+<pre><code>curl -fsSL https://xerootg.github.io/xerootg.asc | sudo pacman-key --add -
+sudo pacman-key --lsign-key 92797DD4B592A67C25CD10B6455DF147BCC82C29
+
+sudo tee -a /etc/pacman.conf &gt; /dev/null &lt;&lt;&#x27;EOF&#x27;
+
+[custom]
+Server = https://github.com/xerootg/arch/releases/download/custom-repo
+SigLevel = Required DatabaseOptional
+
+[ghidra]
+Server = https://github.com/xerootg/arch/releases/download/pacman-repo
+SigLevel = Required DatabaseOptional
+
+[orca]
+Server = https://github.com/xerootg/arch/releases/download/orca-repo
+SigLevel = Required DatabaseOptional
+EOF
+sudo pacman -Sy</code></pre>
+<p class="note"><strong>Why the key step:</strong> pacman keeps its own keyring, separate from your user GPG keyring. <code>--add</code> imports the key; <code>--lsign-key</code> is the part people miss — it signs the key locally to mark it trusted, and without it pacman still refuses every package with <em>unknown trust</em>. The fingerprint is <code>92797DD4B592A67C25CD10B6455DF147BCC82C29</code>; you can check it against <a href="https://xerootg.github.io/xerootg.asc">the published key</a>.</p>
+<p class="note">Or edit <code>/etc/pacman.conf</code> by hand and add whichever you want. The server URLs never change, so this is a one-time edit.</p>
+<pre><code>[custom]
+Server = https://github.com/xerootg/arch/releases/download/custom-repo
+SigLevel = Required DatabaseOptional
+
+[ghidra]
+Server = https://github.com/xerootg/arch/releases/download/pacman-repo
+SigLevel = Required DatabaseOptional
+
+[orca]
+Server = https://github.com/xerootg/arch/releases/download/orca-repo
+SigLevel = Required DatabaseOptional</code></pre>
+<h2 id="custom"><code>[custom]</code> <span class="count">22 packages</span></h2>
+<p class="note">The general repo. Built by <code>build-pacman-repo</code> from <code>pkgbuilds/</code> and served from a GitHub Release. It moved off GitHub Pages because a pushed file over 100 MB is refused outright, which capped what could live here and let superseded packages accumulate; release assets allow 2 GB and can be pruned.</p>
+<pre><code>[custom]
+Server = https://github.com/xerootg/arch/releases/download/custom-repo
+SigLevel = Required DatabaseOptional</code></pre>
+<div class="scroll"><table>
+<thead><tr><th>Package</th><th>Version</th><th>Download</th><th>Installed</th><th>Built</th><th>First seen</th><th>Updated</th></tr></thead><tbody>
+<tr><td class="pkg"><div class="pkgname"><a href="https://gitlab.com/accounts-sso/accounts-qml-module">accounts-qml-module</a></div><div class="pkgdesc">Expose the Online Accounts API to QML applications</div></td><td class="ver">0.7-8</td><td class="num">81.2 KiB</td><td class="num">265.2 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://build2.org/">build2</a></div><div class="pkgdesc">build2 build system</div></td><td class="ver">0.18.1-1</td><td class="num">7.2 MiB</td><td class="num">25.3 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://angryip.org">ipscan</a></div><div class="pkgdesc">Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner designed to be fast and simple to use. It scans IP addresses and ports as well as has many other features.</div></td><td class="ver">3.9.3-1</td><td class="num">2.0 MiB</td><td class="num">2.1 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-11</td><td class="date">2026-08-11</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/xerootg/xeros-tiling-window-manager">kwin-scripts-xeros-tiling-window-manager-git</a></div><div class="pkgdesc">Xero&#x27;s Tiling Window Manager - KDE KWin Script for snapping windows into zones</div></td><td class="ver">1.1-1</td><td class="num">13.8 KiB</td><td class="num">14.1 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-11</td><td class="date">2026-08-11</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://www.codesynthesis.com/projects/libcutl/">libcutl</a></div><div class="pkgdesc">A C++ utility library</div></td><td class="ver">1.11.0-4</td><td class="num">124.8 KiB</td><td class="num">437.0 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://fprint.freedesktop.org/">libfprint-elanmoc2-slg3-git</a></div><div class="pkgdesc">Library for fingerprint readers with patches for the support of the ELAN used in Surface Laptop Go 1, 2 and 3</div></td><td class="ver">1.94.0+0da15123-1</td><td class="num">7.2 MiB</td><td class="num">24.5 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-11</td><td class="date">2026-08-11</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://www.kolab.org/">libkolabxml</a></div><div class="pkgdesc">Kolab XML Format Schema Definitions Library</div></td><td class="ver">1.3.1-10</td><td class="num">663.4 KiB</td><td class="num">2.8 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://gitlab.freedesktop.org/xorg/lib/pthread-stubs">libpthread-stubs</a></div><div class="pkgdesc">This library provides weak aliases for pthread functions not provided in libc or otherwise available by default.</div></td><td class="ver">0.5-1</td><td class="num">8.3 KiB</td><td class="num">178 B</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://www.codesynthesis.com/products/xsd">libxsd</a></div><div class="pkgdesc">An open-source, cross-platform W3C XML Schema to C++ data binding compiler (runtime library)</div></td><td class="ver">4.2.0-2</td><td class="num">139.9 KiB</td><td class="num">1.3 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://www.codesynthesis.com/projects/libxsd-frontend/">libxsd-frontend</a></div><div class="pkgdesc">A compiler frontend for the W3C XML Schema definition language</div></td><td class="ver">2.1.0-3</td><td class="num">298.2 KiB</td><td class="num">1.2 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="http://www.litehtml.com/">litehtml0.9</a></div><div class="pkgdesc">Fast and lightweight HTML/CSS rendering engine</div></td><td class="ver">0.9-4</td><td class="num">288.4 KiB</td><td class="num">887.7 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/envolution/llama.cpp-server-tray">llama.cpp-server-tray</a></div><div class="pkgdesc">Companion system tray app for llama.cpp-server-service</div></td><td class="ver">0.5-2</td><td class="num">35.1 KiB</td><td class="num">194.0 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/aio-libs/async-timeout">python-async-timeout</a></div><div class="pkgdesc">Timeout context manager for asyncio programs.</div></td><td class="ver">5.0.1-2</td><td class="num">16.8 KiB</td><td class="num">44.9 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/Ch00k/ffmpy">python-ffmpy</a></div><div class="pkgdesc">A simple Python wrapper for FFmpeg.</div></td><td class="ver">1.0.0-1</td><td class="num">15.9 KiB</td><td class="num">39.3 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/kokarare1212/librespot-python">python-librespot</a></div><div class="pkgdesc">Open Source Spotify Client</div></td><td class="ver">0.0.10-1</td><td class="num">262.7 KiB</td><td class="num">2.5 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/KristoforMaynard/music-tag">python-music-tag</a></div><div class="pkgdesc">Simple interface to edit audio file metadata</div></td><td class="ver">0.4.3-1</td><td class="num">55.1 KiB</td><td class="num">277.3 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/pdm-project/pdm-pep517">python-pdm-pep517</a></div><div class="pkgdesc">A PEP 517 backend for PDM that supports PEP 621 metadata</div></td><td class="ver">1:1.1.4-5</td><td class="num">90.9 KiB</td><td class="num">437.3 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/asweigart/pwinput">python-pwinput</a></div><div class="pkgdesc">A cross-platform Python module that displays **** for password input.</div></td><td class="ver">1.0.3-1</td><td class="num">12.7 KiB</td><td class="num">23.4 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/Zuzu-Typ/PyOgg">python-pyogg</a></div><div class="pkgdesc">Flac, ogg, and opus python library</div></td><td class="ver">0.6.14a1-1</td><td class="num">85.8 KiB</td><td class="num">707.1 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/karpetrosyan/http-snapshot">python-pytest-http-snapshot</a></div><div class="pkgdesc">Pytest plugin that captures and snapshots HTTP roundtrips. Supports httpx and requests.</div></td><td class="ver">0.1.9-1</td><td class="num">30.6 KiB</td><td class="num">122.3 KiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="http://hangeul.naver.com/">ttf-nanum</a></div><div class="pkgdesc">Nanum series TrueType fonts</div></td><td class="ver">2018-1</td><td class="num">26.9 MiB</td><td class="num">113.9 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-11</td><td class="date">2026-08-11</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://www.codesynthesis.com/products/xsd">xsd</a></div><div class="pkgdesc">An open-source, cross-platform W3C XML Schema to C++ data binding compiler</div></td><td class="ver">4.2.0-2</td><td class="num">1.4 MiB</td><td class="num">5.8 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
+</tbody></table></div>
+<h2 id="ghidra"><code>[ghidra]</code> <span class="count">1 package</span></h2>
+<p class="note">Stock Ghidra with the <em>"would you like to analyze it now?"</em> prompt moved to a tool option that ships disabled. About 500 MB, which is over GitHub's 100 MB push limit, so it is served from a release rather than Pages.</p>
+<pre><code>[ghidra]
+Server = https://github.com/xerootg/arch/releases/download/pacman-repo
+SigLevel = Required DatabaseOptional</code></pre>
+<div class="scroll"><table>
+<thead><tr><th>Package</th><th>Version</th><th>Download</th><th>Installed</th><th>Built</th><th>First seen</th><th>Updated</th></tr></thead><tbody>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/xerootg/ghidra">ghidra-noprompt</a></div><div class="pkgdesc">Ghidra software reverse engineering suite, patched so opening an unanalyzed program does not prompt for auto-analysis</div></td><td class="ver">12.1.3-1</td><td class="num">510.0 MiB</td><td class="num">858.3 MiB</td><td class="date">2026-08-19</td><td class="date">2026-08-11</td><td class="date">2026-08-19</td></tr>
+</tbody></table></div>
+<h2 id="orca"><code>[orca]</code> <span class="count">2 packages</span></h2>
+<p class="note">OrcaSlicer, built from git. Around 164 MB, so it is served from a release for the same reason as <code>[ghidra]</code>.</p>
+<pre><code>[orca]
+Server = https://github.com/xerootg/arch/releases/download/orca-repo
+SigLevel = Required DatabaseOptional</code></pre>
+<div class="scroll"><table>
+<thead><tr><th>Package</th><th>Version</th><th>Download</th><th>Installed</th><th>Built</th><th>First seen</th><th>Updated</th></tr></thead><tbody>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/SoftFever/OrcaSlicer">orca-slicer-git</a></div><div class="pkgdesc">G-code generator for 3D printers (Bambu, Prusa, Voron, VzBot, RatRig, Creality, etc.)</div></td><td class="ver">2.5.0.r30157.ba22973-1</td><td class="num">162.0 MiB</td><td class="num">500.0 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-11</td><td class="date">2026-08-20</td></tr>
+<tr><td class="pkg"><div class="pkgname"><a href="https://github.com/SoftFever/OrcaSlicer">orca-slicer-git-extras</a></div><div class="pkgdesc">Calibration models and dev tools for OrcaSlicer</div></td><td class="ver">2.5.0.r30157.ba22973-1</td><td class="num">21.7 MiB</td><td class="num">58.5 MiB</td><td class="date">2026-08-20</td><td class="date">2026-08-11</td><td class="date">2026-08-20</td></tr>
+</tbody></table></div>
+<h2 id="changes">Recent changes</h2>
+<p class="note">Showing 43. The whole log is in <a href="data/changes.csv">data/changes.csv</a>.</p>
+<div class="scroll"><table>
+<thead><tr><th>When</th><th>Repo</th><th>Package</th><th>Event</th><th>From</th><th>To</th></tr></thead><tbody>
+<tr><td class="date">2026-08-20 06:05</td><td class="name">custom</td><td class="name">llama.cpp-server-tray</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">0.5-2</td></tr>
+<tr><td class="date">2026-08-20 06:05</td><td class="name">custom</td><td class="name">imhex</td><td><span class="event removed">removed</span></td><td class="ver">1.38.1-2</td><td class="ver">—</td></tr>
+<tr><td class="date">2026-08-20 06:05</td><td class="name">custom</td><td class="name">libfprint-elanmoc2-slg3-git-debug</td><td><span class="event removed">removed</span></td><td class="ver">1.94.0+0da15123-1</td><td class="ver">—</td></tr>
+<tr><td class="date">2026-08-20 06:02</td><td class="name">orca</td><td class="name">orca-slicer-git</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30112.4fd7fdb-1</td><td class="ver">2.5.0.r30157.ba22973-1</td></tr>
+<tr><td class="date">2026-08-20 06:02</td><td class="name">orca</td><td class="name">orca-slicer-git-extras</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30112.4fd7fdb-1</td><td class="ver">2.5.0.r30157.ba22973-1</td></tr>
+<tr><td class="date">2026-08-20 03:05</td><td class="name">custom</td><td class="name">python-librespot</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">0.0.10-1</td></tr>
+<tr><td class="date">2026-08-20 03:05</td><td class="name">custom</td><td class="name">python-pyogg</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">0.6.14a1-1</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">accounts-qml-module</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">0.7-8</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">build2</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">0.18.1-1</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">libcutl</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">1.11.0-4</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">libkolabxml</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">1.3.1-10</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">libpthread-stubs</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">0.5-1</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">libxsd</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">4.2.0-2</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">libxsd-frontend</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">2.1.0-3</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">litehtml0.9</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">0.9-4</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">python-async-timeout</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">5.0.1-2</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">python-ffmpy</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">1.0.0-1</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">python-music-tag</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">0.4.3-1</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">python-pdm-pep517</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">1:1.1.4-5</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">python-pwinput</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">1.0.3-1</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">python-pytest-http-snapshot</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">0.1.9-1</td></tr>
+<tr><td class="date">2026-08-20 01:27</td><td class="name">custom</td><td class="name">xsd</td><td><span class="event added">added</span></td><td class="ver">—</td><td class="ver">4.2.0-2</td></tr>
+<tr><td class="date">2026-08-19 08:55</td><td class="name">ghidra</td><td class="name">ghidra-noprompt</td><td><span class="event updated">updated</span></td><td class="ver">12.1.2-1</td><td class="ver">12.1.3-1</td></tr>
+<tr><td class="date">2026-08-19 05:21</td><td class="name">orca</td><td class="name">orca-slicer-git</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30109.ba22a87-1</td><td class="ver">2.5.0.r30112.4fd7fdb-1</td></tr>
+<tr><td class="date">2026-08-19 05:21</td><td class="name">orca</td><td class="name">orca-slicer-git-extras</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30109.ba22a87-1</td><td class="ver">2.5.0.r30112.4fd7fdb-1</td></tr>
+<tr><td class="date">2026-08-18 06:10</td><td class="name">orca</td><td class="name">orca-slicer-git</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30106.f529692-1</td><td class="ver">2.5.0.r30109.ba22a87-1</td></tr>
+<tr><td class="date">2026-08-18 06:10</td><td class="name">orca</td><td class="name">orca-slicer-git-extras</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30106.f529692-1</td><td class="ver">2.5.0.r30109.ba22a87-1</td></tr>
+<tr><td class="date">2026-08-17 05:41</td><td class="name">orca</td><td class="name">orca-slicer-git</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30104.d5dbd96-1</td><td class="ver">2.5.0.r30106.f529692-1</td></tr>
+<tr><td class="date">2026-08-17 05:41</td><td class="name">orca</td><td class="name">orca-slicer-git-extras</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30104.d5dbd96-1</td><td class="ver">2.5.0.r30106.f529692-1</td></tr>
+<tr><td class="date">2026-08-16 00:57</td><td class="name">custom</td><td class="name">imhex</td><td><span class="event updated">updated</span></td><td class="ver">1.38.1-1</td><td class="ver">1.38.1-2</td></tr>
+<tr><td class="date">2026-08-14 05:53</td><td class="name">orca</td><td class="name">orca-slicer-git</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30098.d322b1a-1</td><td class="ver">2.5.0.r30104.d5dbd96-1</td></tr>
+<tr><td class="date">2026-08-14 05:53</td><td class="name">orca</td><td class="name">orca-slicer-git-extras</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30098.d322b1a-1</td><td class="ver">2.5.0.r30104.d5dbd96-1</td></tr>
+<tr><td class="date">2026-08-13 06:13</td><td class="name">orca</td><td class="name">orca-slicer-git</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30091.c806a09-1</td><td class="ver">2.5.0.r30098.d322b1a-1</td></tr>
+<tr><td class="date">2026-08-13 06:13</td><td class="name">orca</td><td class="name">orca-slicer-git-extras</td><td><span class="event updated">updated</span></td><td class="ver">2.5.0.r30091.c806a09-1</td><td class="ver">2.5.0.r30098.d322b1a-1</td></tr>
+<tr><td class="date">2026-08-11 06:33</td><td class="name">custom</td><td class="name">imhex</td><td><span class="event seeded">seeded</span></td><td class="ver">—</td><td class="ver">1.38.1-1</td></tr>
+<tr><td class="date">2026-08-11 06:33</td><td class="name">custom</td><td class="name">ipscan</td><td><span class="event seeded">seeded</span></td><td class="ver">—</td><td class="ver">3.9.3-1</td></tr>
+<tr><td class="date">2026-08-11 06:33</td><td class="name">custom</td><td class="name">kwin-scripts-xeros-tiling-window-manager-git</td><td><span class="event seeded">seeded</span></td><td class="ver">—</td><td class="ver">1.1-1</td></tr>
+<tr><td class="date">2026-08-11 06:33</td><td class="name">custom</td><td class="name">libfprint-elanmoc2-slg3-git</td><td><span class="event seeded">seeded</span></td><td class="ver">—</td><td class="ver">1.94.0+0da15123-1</td></tr>
+<tr><td class="date">2026-08-11 06:33</td><td class="name">custom</td><td class="name">libfprint-elanmoc2-slg3-git-debug</td><td><span class="event seeded">seeded</span></td><td class="ver">—</td><td class="ver">1.94.0+0da15123-1</td></tr>
+<tr><td class="date">2026-08-11 06:33</td><td class="name">custom</td><td class="name">ttf-nanum</td><td><span class="event seeded">seeded</span></td><td class="ver">—</td><td class="ver">2018-1</td></tr>
+<tr><td class="date">2026-08-11 06:33</td><td class="name">ghidra</td><td class="name">ghidra-noprompt</td><td><span class="event seeded">seeded</span></td><td class="ver">—</td><td class="ver">12.1.2-1</td></tr>
+<tr><td class="date">2026-08-11 06:33</td><td class="name">orca</td><td class="name">orca-slicer-git</td><td><span class="event seeded">seeded</span></td><td class="ver">—</td><td class="ver">2.5.0.r30091.c806a09-1</td></tr>
+<tr><td class="date">2026-08-11 06:33</td><td class="name">orca</td><td class="name">orca-slicer-git-extras</td><td><span class="event seeded">seeded</span></td><td class="ver">—</td><td class="ver">2.5.0.r30091.c806a09-1</td></tr>
+</tbody></table></div>
+<footer>
+<p>Generated from each repo's pacman database — the same <code>.db</code> file pacman downloads — by <a href="https://github.com/xerootg/arch/blob/main/.github/scripts/build-repo-index.py">build-repo-index.py</a>. Nothing on this page is hand-maintained.</p>
+<p>Machine-readable: <a href="data/packages.csv">packages.csv</a> · <a href="data/changes.csv">changes.csv</a> · <a href="https://github.com/xerootg/arch">source</a></p>
+</footer>
+</main>
+<script>
+document.querySelectorAll('pre').forEach(function (block) {
+  var button = document.createElement('button');
+  button.className = 'copy';
+  button.type = 'button';
+  button.textContent = 'copy';
+  button.addEventListener('click', function () {
+    navigator.clipboard.writeText(block.querySelector('code').textContent).then(function () {
+      button.textContent = 'copied';
+      setTimeout(function () { button.textContent = 'copy'; }, 1200);
+    });
+  });
+  block.appendChild(button);
+});
+</script>
+</body>
+</html>
