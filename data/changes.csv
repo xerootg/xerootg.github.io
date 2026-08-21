@@ -79,3 +79,14 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-20T23:03:45Z,custom,visual-studio-code-bin,added,,1.134.0-1
 2026-08-20T23:03:45Z,custom,yay,added,,13.0.1-1
 2026-08-20T23:03:45Z,custom,ytdlp-gui-bin,added,,3.5.1-1
+2026-08-21T00:02:46Z,custom,aspnet-runtime-preview-bin,added,,1:11.0.0.sdk100preview7.26381.103-2
+2026-08-21T00:02:46Z,custom,aspnet-targeting-pack-preview-bin,added,,1:11.0.0.sdk100preview7.26381.103-2
+2026-08-21T00:02:46Z,custom,dotnet-host-preview-bin,added,,1:11.0.0.sdk100preview7.26381.103-2
+2026-08-21T00:02:46Z,custom,dotnet-runtime-preview-bin,added,,1:11.0.0.sdk100preview7.26381.103-2
+2026-08-21T00:02:46Z,custom,dotnet-sdk-preview-bin,added,,1:11.0.0.sdk100preview7.26381.103-2
+2026-08-21T00:02:46Z,custom,dotnet-targeting-pack-preview-bin,added,,1:11.0.0.sdk100preview7.26381.103-2
+2026-08-21T00:02:46Z,custom,ggml-sycl-f32-git,added,,r4365.8c63e70-1
+2026-08-21T00:02:46Z,custom,python-frida-git,added,,17.17.0.r20.g44952c7-1
+2026-08-21T00:02:46Z,custom,python-sentencepiece,added,,0.2.2-2
+2026-08-21T00:02:46Z,custom,rapidraw-git,added,,1.6.1.r53.ge4d3c81-1
+2026-08-21T00:02:46Z,custom,sentencepiece,added,,0.2.2-2
