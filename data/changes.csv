@@ -90,3 +90,4 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-21T00:02:46Z,custom,python-sentencepiece,added,,0.2.2-2
 2026-08-21T00:02:46Z,custom,rapidraw-git,added,,1.6.1.r53.ge4d3c81-1
 2026-08-21T00:02:46Z,custom,sentencepiece,added,,0.2.2-2
+2026-08-21T01:37:53Z,custom,python-mutf8,updated,1.0.6-7,1.1.0-1
