@@ -107,3 +107,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-21T07:04:14Z,custom,python-py-key-value-aio,added,,0.4.0-1
 2026-08-21T08:44:42Z,custom,rapidraw-git,updated,1.6.1.r53.ge4d3c81-1,1.6.1.r54.g2756d13-1
 2026-08-21T09:06:44Z,custom,rapidraw-git,updated,1.6.1.r54.g2756d13-1,1.6.1.r53.ge4d3c81-1
+2026-08-21T14:43:49Z,custom,ilspy-git,added,,v11.0.r115.gf4ac761a1-1
+2026-08-21T14:43:49Z,custom,llama.cpp-sycl-f32-git,added,,b10549.r17.bb4caa7540-1
