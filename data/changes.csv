@@ -115,3 +115,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-22T06:08:52Z,custom,rapidraw-git,updated,1.6.1.r54.g2756d13-1,1.6.2.r0.g240169c-1
 2026-08-22T06:08:52Z,orca,orca-slicer-git,updated,2.5.0.r30183.6ef02a6-1,2.5.0.r30187.4b397fc-1
 2026-08-22T06:08:52Z,orca,orca-slicer-git-extras,updated,2.5.0.r30183.6ef02a6-1,2.5.0.r30187.4b397fc-1
+2026-08-22T22:24:34Z,custom,llama.cpp-sycl-f32-git,updated,b10573-1,b10549.r17.bb4caa7540-1
+2026-08-22T22:24:34Z,custom,rapidraw-git,updated,1.6.2.r0.g240169c-1,1.6.1.r54.g2756d13-1
