@@ -130,3 +130,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-23T06:33:42Z,custom,cline-cli,updated,3.0.56-1,3.0.57-1
 2026-08-23T06:33:42Z,custom,llama.cpp-sycl-f32-git,updated,b10588-1,b10549.r17.bb4caa7540-1
 2026-08-23T06:33:42Z,custom,rapidraw-git,updated,1.6.2.r0.g240169c-1,1.6.1.r54.g2756d13-1
+2026-08-24T06:05:11Z,custom,llama.cpp-sycl-f32-git,updated,b10549.r17.bb4caa7540-1,b10603-1
+2026-08-24T06:05:11Z,custom,rapidraw-git,updated,1.6.1.r54.g2756d13-1,1.6.2.r15.g9776d55-1
+2026-08-24T06:05:11Z,orca,orca-slicer-git,updated,2.5.0.r30189.550e234-1,2.5.0.r30195.d61e0cb-1
+2026-08-24T06:05:11Z,orca,orca-slicer-git-extras,updated,2.5.0.r30189.550e234-1,2.5.0.r30195.d61e0cb-1
