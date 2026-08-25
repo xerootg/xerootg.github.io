@@ -135,3 +135,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-24T06:05:11Z,orca,orca-slicer-git,updated,2.5.0.r30189.550e234-1,2.5.0.r30195.d61e0cb-1
 2026-08-24T06:05:11Z,orca,orca-slicer-git-extras,updated,2.5.0.r30189.550e234-1,2.5.0.r30195.d61e0cb-1
 2026-08-25T02:06:56Z,custom,cline-cli,updated,3.0.57-1,3.0.58-1
+2026-08-25T05:11:57Z,custom,ilspy-git,updated,v11.0.r115.gf4ac761a1-1,v11.0.r132.g542d3b040-1
+2026-08-25T05:11:57Z,custom,llama.cpp-sycl-f32-git,updated,b10603-1,b10615-1
+2026-08-25T05:11:57Z,orca,orca-slicer-git,updated,2.5.0.r30195.d61e0cb-1,2.5.0.r30196.524fd5e-1
+2026-08-25T05:11:57Z,orca,orca-slicer-git-extras,updated,2.5.0.r30195.d61e0cb-1,2.5.0.r30196.524fd5e-1
