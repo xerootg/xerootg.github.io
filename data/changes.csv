@@ -134,3 +134,4 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-24T06:05:11Z,custom,rapidraw-git,updated,1.6.1.r54.g2756d13-1,1.6.2.r15.g9776d55-1
 2026-08-24T06:05:11Z,orca,orca-slicer-git,updated,2.5.0.r30189.550e234-1,2.5.0.r30195.d61e0cb-1
 2026-08-24T06:05:11Z,orca,orca-slicer-git-extras,updated,2.5.0.r30189.550e234-1,2.5.0.r30195.d61e0cb-1
+2026-08-25T02:06:56Z,custom,cline-cli,updated,3.0.57-1,3.0.58-1
