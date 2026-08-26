@@ -139,3 +139,4 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-25T05:11:57Z,custom,llama.cpp-sycl-f32-git,updated,b10603-1,b10615-1
 2026-08-25T05:11:57Z,orca,orca-slicer-git,updated,2.5.0.r30195.d61e0cb-1,2.5.0.r30196.524fd5e-1
 2026-08-25T05:11:57Z,orca,orca-slicer-git-extras,updated,2.5.0.r30195.d61e0cb-1,2.5.0.r30196.524fd5e-1
+2026-08-26T02:09:50Z,custom,claude-code,updated,2.1.241-1,2.1.246-1
