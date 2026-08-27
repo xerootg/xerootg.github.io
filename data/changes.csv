@@ -150,3 +150,8 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-27T03:28:30Z,custom,claude-desktop,updated,1.34493.1-1,1.37937.1-1
 2026-08-27T03:28:30Z,custom,cline-cli,updated,3.0.58-1,3.0.60-1
 2026-08-27T03:28:30Z,custom,python-google-genai,updated,2.19.0-1,2.20.0-1
+2026-08-27T07:29:05Z,custom,ilspy-git,updated,v11.0.r144.g76ec7588e-1,v11.0.r147.ga980639f9-1
+2026-08-27T07:29:05Z,custom,llama.cpp-sycl-f32-git,updated,b10630-1,b10644-1
+2026-08-27T07:29:05Z,custom,rapidraw-git,updated,1.6.2.r18.gf800f5e-1,1.6.2.r33.g99ce42d-1
+2026-08-27T07:29:05Z,orca,orca-slicer-git,updated,2.5.0.r30243.24967b5-1,2.5.0.r30247.142c63a-1
+2026-08-27T07:29:05Z,orca,orca-slicer-git-extras,updated,2.5.0.r30243.24967b5-1,2.5.0.r30247.142c63a-1
