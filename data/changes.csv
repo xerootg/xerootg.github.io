@@ -155,3 +155,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-27T07:29:05Z,custom,rapidraw-git,updated,1.6.2.r18.gf800f5e-1,1.6.2.r33.g99ce42d-1
 2026-08-27T07:29:05Z,orca,orca-slicer-git,updated,2.5.0.r30243.24967b5-1,2.5.0.r30247.142c63a-1
 2026-08-27T07:29:05Z,orca,orca-slicer-git-extras,updated,2.5.0.r30243.24967b5-1,2.5.0.r30247.142c63a-1
+2026-08-28T04:49:06Z,custom,claude-code,updated,2.1.247-1,2.1.250-1
+2026-08-28T04:49:06Z,custom,claude-desktop,updated,1.37937.1-1,1.37937.3-1
+2026-08-28T04:49:06Z,custom,python-google-genai,updated,2.20.0-1,2.20.0-2
+2026-08-28T04:49:06Z,custom,visual-studio-code-bin,updated,1.134.0-1,1.135.0-1
