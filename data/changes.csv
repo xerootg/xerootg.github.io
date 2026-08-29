@@ -163,3 +163,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-28T12:30:48Z,custom,llama.cpp-sycl-f32-git,updated,b10644-1,b10666-1
 2026-08-28T12:30:48Z,custom,python-frida-git,updated,17.17.0.r20.g44952c7-1,17.17.0.r21.g62d2a3c-1
 2026-08-28T12:30:48Z,custom,rapidraw-git,updated,1.6.2.r33.g99ce42d-1,1.6.2.r38.ge38f08d-1
+2026-08-29T02:00:37Z,custom,claude-code,updated,2.1.250-1,2.1.251-1
+2026-08-29T02:00:37Z,custom,podctl-bin,updated,0.1.1-1,0.1.3-1
+2026-08-29T02:00:37Z,custom,python-apkinspector,updated,1.3.6-2,1.3.7-1
