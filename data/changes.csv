@@ -171,3 +171,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-29T05:57:09Z,custom,rapidraw-git,updated,1.6.2.r38.ge38f08d-1,1.6.2.r39.g9cd3110-1
 2026-08-29T05:57:09Z,orca,orca-slicer-git,updated,2.5.0.r30247.142c63a-1,2.5.0.r30260.db29f57-1
 2026-08-29T05:57:09Z,orca,orca-slicer-git-extras,updated,2.5.0.r30247.142c63a-1,2.5.0.r30260.db29f57-1
+2026-08-30T02:29:20Z,custom,claude-desktop,updated,1.37937.3-1,1.40609.0-1
+2026-08-30T02:29:20Z,custom,python-anthropic,updated,0.107.1-1,0.125.0-1
+2026-08-30T02:29:20Z,custom,python-pytest-http-snapshot,updated,0.1.9-1,0.1.9-2
