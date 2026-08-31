@@ -179,3 +179,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-30T05:53:54Z,custom,rapidraw-git,updated,1.6.2.r39.g9cd3110-1,1.6.2.r47.g7ac8d50-1
 2026-08-30T05:53:54Z,orca,orca-slicer-git,updated,2.5.0.r30260.db29f57-1,2.5.0.r30261.05b3c90-1
 2026-08-30T05:53:54Z,orca,orca-slicer-git-extras,updated,2.5.0.r30260.db29f57-1,2.5.0.r30261.05b3c90-1
+2026-08-31T08:49:22Z,custom,ilspy-git,updated,v11.0.r195.g51d3d3c6e-1,v11.0.r232.g1522aee30-1
+2026-08-31T08:49:22Z,custom,rapidraw-git,updated,1.6.2.r47.g7ac8d50-1,1.6.2.r48.gd6d8daa-1
