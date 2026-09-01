@@ -183,3 +183,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-08-31T08:49:22Z,custom,rapidraw-git,updated,1.6.2.r47.g7ac8d50-1,1.6.2.r48.gd6d8daa-1
 2026-09-01T02:33:46Z,custom,claude-code,updated,2.1.251-1,2.1.252-1
 2026-09-01T02:33:46Z,custom,python-fastmcp,updated,3.4.7-5,4.0.0-1
+2026-09-01T08:48:40Z,custom,ggml-sycl-f32-git,updated,r4428.36da571-1,r4480.d471637-1
+2026-09-01T08:48:40Z,custom,rapidraw-git,updated,1.6.2.r48.gd6d8daa-1,1.6.2.r64.g4f6a365-1
