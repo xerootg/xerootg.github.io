@@ -188,3 +188,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-02T02:06:06Z,custom,claude-code,updated,2.1.252-1,2.1.258-1
 2026-09-02T02:06:06Z,custom,ipscan,updated,3.9.3-1,3.10.0-1
 2026-09-02T02:06:06Z,custom,python-google-genai,updated,2.20.0-2,2.21.0-1
+2026-09-02T08:47:55Z,custom,ilspy-git,updated,v11.0.r232.g1522aee30-1,v11.0.r240.g9f6f90ec7-1
+2026-09-02T08:47:55Z,custom,llama.cpp-sycl-f32-git,updated,b10689-1,b10752-1
+2026-09-02T08:47:55Z,custom,python-frida-git,updated,17.17.0.r21.g62d2a3c-1,17.17.0.r25.gd4268a6-1
+2026-09-02T08:47:55Z,custom,rapidraw-git,updated,1.6.2.r64.g4f6a365-1,1.6.2.r69.g91a1d3c-1
