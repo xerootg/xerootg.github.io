@@ -202,3 +202,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-03T08:48:48Z,custom,rapidraw-git,updated,1.6.2.r69.g91a1d3c-1,1.6.2.r82.g09794df-1
 2026-09-04T02:29:02Z,custom,claude-code,updated,2.1.259-1,2.1.260-1
 2026-09-04T02:29:02Z,custom,visual-studio-code-bin,updated,1.136.0-1,1.136.1-1
+2026-09-04T08:47:46Z,custom,ilspy-git,updated,v11.0.r240.g9f6f90ec7-1,v11.0.r269.g56f45ae8f-1
+2026-09-04T08:47:46Z,custom,python-frida-git,updated,17.17.0.r27.g3277487-1,17.17.0.r30.g4cb735c-1
+2026-09-04T08:47:46Z,custom,rapidraw-git,updated,1.6.2.r82.g09794df-1,1.6.3.r0.gec50408-1
