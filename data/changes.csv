@@ -209,3 +209,4 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-05T08:43:55Z,custom,ggml-sycl-f32-git,updated,r4480.d471637-1,r4538.e91ded1-1
 2026-09-05T08:43:55Z,custom,ilspy-git,updated,v11.0.r269.g56f45ae8f-1,v11.0.r273.gce34d3cc0-1
 2026-09-05T08:43:55Z,custom,python-frida-git,updated,17.17.0.r30.g4cb735c-1,17.17.0.r32.g045f2b1-1
+2026-09-06T02:32:27Z,custom,python-fastmcp,updated,4.0.2-1,4.0.3-1
