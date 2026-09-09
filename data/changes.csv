@@ -222,3 +222,8 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-08T08:48:04Z,custom,ilspy-git,updated,v11.0.r292.g20714f922-1,v11.0.r300.gef1574753-1
 2026-09-08T08:48:04Z,custom,llama.cpp-sycl-f32-git,updated,b10830.r1.8fe90e1fbf-1,b10853-1
 2026-09-08T08:48:04Z,custom,python-frida-git,updated,17.17.0.r35.g56c2520-1,17.17.0.r37.g0df58a9-1
+2026-09-09T02:29:25Z,custom,claude-code,updated,2.1.263-1,2.1.266-1
+2026-09-09T02:29:25Z,custom,jadx-ai-mcp-bin,updated,6.1.0-5,6.4.1-1
+2026-09-09T02:29:25Z,custom,python-py-key-value-aio,updated,0.4.0-1,0.4.5-2
+2026-09-09T02:29:25Z,custom,python-uncalled-for,updated,0.2.0-1,0.4.0-1
+2026-09-09T02:29:25Z,custom,visual-studio-code-bin,updated,1.136.1-1,1.136.2-1
