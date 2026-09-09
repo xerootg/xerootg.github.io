@@ -227,3 +227,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-09T02:29:25Z,custom,python-py-key-value-aio,updated,0.4.0-1,0.4.5-2
 2026-09-09T02:29:25Z,custom,python-uncalled-for,updated,0.2.0-1,0.4.0-1
 2026-09-09T02:29:25Z,custom,visual-studio-code-bin,updated,1.136.1-1,1.136.2-1
+2026-09-09T08:46:47Z,custom,ilspy-git,updated,v11.0.r300.gef1574753-1,v11.0.r302.gd09e3c1f6-1
+2026-09-09T08:46:47Z,custom,python-frida-git,updated,17.17.0.r37.g0df58a9-1,17.17.0.r43.ge71d1f5-1
