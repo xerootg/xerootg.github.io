@@ -229,3 +229,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-09T02:29:25Z,custom,visual-studio-code-bin,updated,1.136.1-1,1.136.2-1
 2026-09-09T08:46:47Z,custom,ilspy-git,updated,v11.0.r300.gef1574753-1,v11.0.r302.gd09e3c1f6-1
 2026-09-09T08:46:47Z,custom,python-frida-git,updated,17.17.0.r37.g0df58a9-1,17.17.0.r43.ge71d1f5-1
+2026-09-10T02:24:12Z,custom,claude-code,updated,2.1.266-1,2.1.267-1
+2026-09-10T02:24:12Z,custom,claude-desktop,updated,1.46388.2-1,1.49585.0-1
+2026-09-10T02:24:12Z,custom,snapd,updated,2.76.2-2,2.77.1-1
+2026-09-10T02:24:12Z,custom,visual-studio-code-bin,updated,1.136.2-1,1.137.0-1
