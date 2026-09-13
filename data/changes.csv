@@ -245,3 +245,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-12T02:08:45Z,custom,extract-xiso-git,updated,1:r49.b72e5b6-1,1:r50.3f5b62c-1
 2026-09-12T02:08:45Z,custom,python-google-genai,updated,2.22.0-1,2.23.0-1
 2026-09-12T08:45:03Z,custom,llama.cpp-sycl-f32-git,updated,b10902-1,b10919.r2.3f5e94d7c2-1
+2026-09-13T02:08:09Z,custom,claude-code,updated,2.1.269-1,2.1.270-1
+2026-09-13T02:08:09Z,custom,claude-desktop,updated,1.49585.0-1,1.52386.3-1
