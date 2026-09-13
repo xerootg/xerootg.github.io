@@ -247,3 +247,12 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-12T08:45:03Z,custom,llama.cpp-sycl-f32-git,updated,b10902-1,b10919.r2.3f5e94d7c2-1
 2026-09-13T02:08:09Z,custom,claude-code,updated,2.1.269-1,2.1.270-1
 2026-09-13T02:08:09Z,custom,claude-desktop,updated,1.49585.0-1,1.52386.3-1
+2026-09-13T10:03:31Z,custom,aspnet-runtime-preview-bin,updated,1:11.0.0.sdk100preview7.26381.103-2,1:11.0.0.sdk100rc1.26425.128-1
+2026-09-13T10:03:31Z,custom,aspnet-targeting-pack-preview-bin,updated,1:11.0.0.sdk100preview7.26381.103-2,1:11.0.0.sdk100rc1.26425.128-1
+2026-09-13T10:03:31Z,custom,dotnet-host-preview-bin,updated,1:11.0.0.sdk100preview7.26381.103-2,1:11.0.0.sdk100rc1.26425.128-1
+2026-09-13T10:03:31Z,custom,dotnet-runtime-preview-bin,updated,1:11.0.0.sdk100preview7.26381.103-2,1:11.0.0.sdk100rc1.26425.128-1
+2026-09-13T10:03:31Z,custom,dotnet-sdk-preview-bin,updated,1:11.0.0.sdk100preview7.26381.103-2,1:11.0.0.sdk100rc1.26425.128-1
+2026-09-13T10:03:31Z,custom,dotnet-targeting-pack-preview-bin,updated,1:11.0.0.sdk100preview7.26381.103-2,1:11.0.0.sdk100rc1.26425.128-1
+2026-09-13T10:03:31Z,custom,ilspy-git,updated,v11.0.r318.gdbf23c6e4-1,v11.0.r322.ge58641bd1-1
+2026-09-13T10:03:31Z,custom,llama.cpp-sycl-f32-git,updated,b10919.r2.3f5e94d7c2-1,b10936.r1.56b9eb280a-1
+2026-09-13T10:03:31Z,custom,rapidraw-git,updated,1.6.3.r20.gef25ba2-1,1.6.3.r23.g5ad3ba0-1
