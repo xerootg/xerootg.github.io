@@ -263,3 +263,8 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-15T08:49:52Z,custom,ilspy-git,updated,v11.0.r361.gc9f90082e-1,v11.0.r322.ge58641bd1-1
 2026-09-15T08:49:52Z,custom,llama.cpp-sycl-f32-git,updated,b10951-1,b10975-1
 2026-09-15T08:49:52Z,custom,rapidraw-git,updated,1.6.3.r24.g40cfa3d-1,1.6.3.r32.gf00145c-1
+2026-09-16T01:48:37Z,custom,claude-code,updated,2.1.270-1,2.1.273-1
+2026-09-16T01:48:37Z,custom,claude-desktop,updated,1.52386.3-1,1.52386.6-2
+2026-09-16T01:48:37Z,custom,cline-cli,updated,3.0.61-1,3.0.62-1
+2026-09-16T01:48:37Z,custom,cromite-bin,updated,148.0.7778.168-1,153.0.8010.37-1
+2026-09-16T01:48:37Z,custom,python-beartype,updated,0.22.9-2,0.22.9-3
