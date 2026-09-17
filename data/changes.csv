@@ -270,3 +270,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-16T01:48:37Z,custom,python-beartype,updated,0.22.9-2,0.22.9-3
 2026-09-16T08:49:08Z,custom,ilspy-git,updated,v11.0.r322.ge58641bd1-1,v11.0.r370.g72dbe6f41-1
 2026-09-16T08:49:08Z,custom,llama.cpp-sycl-f32-git,updated,b10975-1,b10991-1
+2026-09-17T03:00:58Z,custom,claude-code,updated,2.1.273-1,2.1.274-1
+2026-09-17T03:00:58Z,custom,claude-desktop,updated,1.52386.6-2,2.110.0-1
+2026-09-17T03:00:58Z,custom,visual-studio-code-bin,updated,1.137.0-1,1.138.0-1
