@@ -128,7 +128,7 @@ footer {
 <h1>Xero&#x27;s package feed</h1>
 <p class="tagline">Prebuilt Arch Linux packages I use or maintain, rebuilt automatically and served straight from GitHub.</p>
 <div class="stamps">
-<div><span class="label">Last checked</span><span class="value">2026-09-17 03:00:58 UTC</span></div>
+<div><span class="label">Last checked</span><span class="value">2026-09-17 03:43:58 UTC</span></div>
 <div><span class="label">Last change</span><span class="value">2026-09-17 03:00:58 UTC</span></div>
 <div><span class="label">Packages</span><span class="value">86</span></div>
 <div><span class="label">Total download</span><span class="value">2.2 GiB</span></div>
@@ -143,7 +143,7 @@ sudo tee -a /etc/pacman.conf &gt; /dev/null &lt;&lt;&#x27;EOF&#x27;
 
 [custom]
 Server = https://github.com/xerootg/arch/releases/download/custom-repo
-SigLevel = Optional TrustAll
+SigLevel = Required DatabaseOptional
 
 [ghidra]
 Server = https://github.com/xerootg/arch/releases/download/pacman-repo
@@ -158,7 +158,7 @@ sudo pacman -Sy</code></pre>
 <p class="note">Or edit <code>/etc/pacman.conf</code> by hand and add whichever you want. The server URLs never change, so this is a one-time edit.</p>
 <pre><code>[custom]
 Server = https://github.com/xerootg/arch/releases/download/custom-repo
-SigLevel = Optional TrustAll
+SigLevel = Required DatabaseOptional
 
 [ghidra]
 Server = https://github.com/xerootg/arch/releases/download/pacman-repo
@@ -167,12 +167,11 @@ SigLevel = Required DatabaseOptional
 [orca]
 Server = https://github.com/xerootg/arch/releases/download/orca-repo
 SigLevel = Required DatabaseOptional</code></pre>
-<p class="stale"><code>[custom]</code> is not signed yet, so it stays on <code>Optional TrustAll</code> until its next publish. The others require a valid signature on every package.</p>
 <h2 id="custom"><code>[custom]</code> <span class="count">83 packages</span></h2>
 <p class="note">The general repo. Built by <code>build-pacman-repo</code> from <code>pkgbuilds/</code> and served from a GitHub Release. It moved off GitHub Pages because a pushed file over 100 MB is refused outright, which capped what could live here and let superseded packages accumulate; release assets allow 2 GB and can be pruned.</p>
 <pre><code>[custom]
 Server = https://github.com/xerootg/arch/releases/download/custom-repo
-SigLevel = Optional TrustAll</code></pre>
+SigLevel = Required DatabaseOptional</code></pre>
 <div class="scroll"><table>
 <thead><tr><th>Package</th><th>Version</th><th>Download</th><th>Installed</th><th>Built</th><th>First seen</th><th>Updated</th></tr></thead><tbody>
 <tr><td class="pkg"><div class="pkgname"><a href="https://gitlab.com/accounts-sso/accounts-qml-module">accounts-qml-module</a></div><div class="pkgdesc">Expose the Online Accounts API to QML applications</div></td><td class="ver">0.7-8</td><td class="num">87.5 KiB</td><td class="num">265.2 KiB</td><td class="date">2026-09-17</td><td class="date">2026-08-20</td><td class="date">2026-08-20</td></tr>
