@@ -277,3 +277,4 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-17T08:48:03Z,custom,rapidraw-git,updated,1.6.3.r32.gf00145c-1,1.6.3.r41.g7bbd1ff-1
 2026-09-18T02:26:33Z,custom,claude-code,updated,2.1.274-1,2.1.275-1
 2026-09-18T02:26:33Z,custom,python-google-genai,updated,2.23.0-1,2.24.0-1
+2026-09-18T08:47:29Z,custom,rapidraw-git,updated,1.6.3.r41.g7bbd1ff-1,1.6.4.r0.g71a0792-1
