@@ -280,3 +280,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-18T08:47:29Z,custom,rapidraw-git,updated,1.6.3.r41.g7bbd1ff-1,1.6.4.r0.g71a0792-1
 2026-09-19T02:25:46Z,custom,claude-code,updated,2.1.275-1,2.1.277-1
 2026-09-19T02:25:46Z,custom,python-standardwebhooks,updated,1.0.1-3,1.1.0-2
+2026-09-20T02:33:25Z,custom,claude-code,updated,2.1.277-1,2.1.278-1
+2026-09-20T02:33:25Z,custom,claude-desktop,updated,2.110.0-1,2.2553.1-1
+2026-09-20T02:33:25Z,custom,podctl-bin,updated,0.1.3-1,0.2.0-1
