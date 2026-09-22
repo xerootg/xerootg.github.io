@@ -287,3 +287,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-20T08:45:45Z,custom,rapidraw-git,updated,1.6.4.r0.g71a0792-1,1.6.4.r2.g317c799-1
 2026-09-21T08:51:36Z,custom,ilspy-git,updated,v11.0.r380.gf75fa7502-1,v11.0.r391.ga30c37412-1
 2026-09-21T08:51:36Z,custom,rapidraw-git,updated,1.6.4.r2.g317c799-1,1.6.4.r4.g4e1c0cb-1
+2026-09-22T08:50:38Z,custom,ilspy-git,updated,v11.0.r391.ga30c37412-1,v11.0.r404.gf7a1fb070-1
+2026-09-22T08:50:38Z,custom,rapidraw-git,updated,1.6.4.r4.g4e1c0cb-1,1.6.4.r10.g5c4b780-1
+2026-09-22T08:50:38Z,ghidra,ghidra-noprompt,updated,12.1.3-1,12.1.4-1
