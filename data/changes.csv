@@ -300,3 +300,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-23T08:49:09Z,custom,rapidraw-git,updated,1.6.4.r10.g5c4b780-1,1.6.4.r15.g6dd1f98-1
 2026-09-24T02:27:07Z,custom,claude-code,updated,2.1.280-1,2.1.281-1
 2026-09-24T02:27:07Z,custom,visual-studio-code-bin,updated,1.138.0-1,1.139.0-1
+2026-09-24T08:50:14Z,custom,ggml-sycl-f32-git,updated,r4694.179b60f-1,r4719.64302f4-1
+2026-09-24T08:50:14Z,custom,ilspy-git,updated,v11.0.r407.ga6909b2e1-1,v11.1.r0.ga6909b2e1-1
+2026-09-24T08:50:14Z,custom,llama.cpp-sycl-f32-git,updated,b10991-1,b11151.r1.013b31c03c-1
+2026-09-24T08:50:14Z,custom,rapidraw-git,updated,1.6.4.r15.g6dd1f98-1,1.6.4.r26.g45fa2ca-1
