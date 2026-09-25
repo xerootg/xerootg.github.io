@@ -308,3 +308,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-25T02:24:32Z,custom,claude-desktop,updated,2.2553.13-1,2.7032.0-1
 2026-09-25T02:24:32Z,custom,cline-cli,updated,3.0.64-1,3.0.65-1
 2026-09-25T02:24:32Z,custom,podctl-bin,updated,0.2.0-1,0.3.0-1
+2026-09-25T08:49:52Z,custom,ggml-sycl-f32-git,updated,r4719.64302f4-1,r4731.353b63b-1
+2026-09-25T08:49:52Z,custom,llama.cpp-sycl-f32-git,updated,b11151.r1.013b31c03c-1,b11176-1
+2026-09-25T08:49:52Z,custom,python-frida-git,updated,17.18.0.r9.g0f207df-1,17.18.0.r10.g578789b-1
