@@ -313,3 +313,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-25T08:49:52Z,custom,python-frida-git,updated,17.18.0.r9.g0f207df-1,17.18.0.r10.g578789b-1
 2026-09-26T02:28:01Z,custom,claude-code,updated,2.1.282-1,2.1.283-1
 2026-09-26T02:28:01Z,custom,visual-studio-code-bin,updated,1.139.0-1,1.139.1-1
+2026-09-26T08:46:51Z,custom,ilspy-git,updated,v11.1.r0.ga6909b2e1-1,v11.1.r2.g67ecdeda5-1
+2026-09-26T08:46:51Z,custom,llama.cpp-sycl-f32-git,updated,b11176-1,b11193.r1.9f70b2cecd-1
+2026-09-26T08:46:51Z,custom,python-frida-git,updated,17.18.0.r10.g578789b-1,17.19.0.r0.g63b3233-1
+2026-09-26T08:46:51Z,custom,rapidraw-git,updated,1.6.4.r26.g45fa2ca-1,1.6.4.r46.g772c76b-1
