@@ -311,3 +311,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-25T08:49:52Z,custom,ggml-sycl-f32-git,updated,r4719.64302f4-1,r4731.353b63b-1
 2026-09-25T08:49:52Z,custom,llama.cpp-sycl-f32-git,updated,b11151.r1.013b31c03c-1,b11176-1
 2026-09-25T08:49:52Z,custom,python-frida-git,updated,17.18.0.r9.g0f207df-1,17.18.0.r10.g578789b-1
+2026-09-26T02:28:01Z,custom,claude-code,updated,2.1.282-1,2.1.283-1
+2026-09-26T02:28:01Z,custom,visual-studio-code-bin,updated,1.139.0-1,1.139.1-1
