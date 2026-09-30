@@ -328,3 +328,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-29T08:53:21Z,custom,llama.cpp-sycl-f32-git,updated,b11223-1,b11243-1
 2026-09-29T08:53:21Z,custom,rapidraw-git,updated,1.6.4.r55.gee73e94-1,1.6.4.r59.ga82251f-1
 2026-09-30T02:09:23Z,custom,claude-code,updated,2.1.284-1,2.1.285-1
+2026-09-30T08:53:46Z,custom,ilspy-git,updated,v11.1.r29.g7434b07f8-1,v11.1.r44.ga3f3d0675-1
+2026-09-30T08:53:46Z,custom,llama.cpp-sycl-f32-git,updated,b11243-1,b11277.r1.931351ea50-1
