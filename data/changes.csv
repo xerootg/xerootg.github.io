@@ -330,3 +330,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-09-30T02:09:23Z,custom,claude-code,updated,2.1.284-1,2.1.285-1
 2026-09-30T08:53:46Z,custom,ilspy-git,updated,v11.1.r29.g7434b07f8-1,v11.1.r44.ga3f3d0675-1
 2026-09-30T08:53:46Z,custom,llama.cpp-sycl-f32-git,updated,b11243-1,b11277.r1.931351ea50-1
+2026-10-01T02:24:00Z,custom,claude-code,updated,2.1.285-1,2.1.286-1
+2026-10-01T02:24:00Z,custom,cline-cli,updated,3.0.65-1,3.0.66-1
+2026-10-01T02:24:00Z,custom,visual-studio-code-bin,updated,1.139.1-1,1.140.0-1
