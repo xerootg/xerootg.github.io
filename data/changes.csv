@@ -335,3 +335,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-01T02:24:00Z,custom,visual-studio-code-bin,updated,1.139.1-1,1.140.0-1
 2026-10-01T08:53:59Z,custom,ilspy-git,updated,v11.1.r44.ga3f3d0675-1,v11.1.r46.g2e296e718-1
 2026-10-01T08:53:59Z,custom,llama.cpp-sycl-f32-git,updated,b11277.r1.931351ea50-1,b11312-1
+2026-10-02T02:25:31Z,custom,claude-code,updated,2.1.286-1,2.1.287-1
+2026-10-02T02:25:31Z,custom,cline-cli,updated,3.0.66-1,3.0.67-1
+2026-10-02T02:25:31Z,custom,python-google-genai,updated,2.25.0-1,2.26.0-1
