@@ -338,3 +338,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-02T02:25:31Z,custom,claude-code,updated,2.1.286-1,2.1.287-1
 2026-10-02T02:25:31Z,custom,cline-cli,updated,3.0.66-1,3.0.67-1
 2026-10-02T02:25:31Z,custom,python-google-genai,updated,2.25.0-1,2.26.0-1
+2026-10-02T08:50:19Z,custom,ilspy-git,updated,v11.1.r46.g2e296e718-1,v11.1.r52.ga1afe694f-1
+2026-10-02T08:50:19Z,custom,llama.cpp-sycl-f32-git,updated,b11312-1,b11347-1
+2026-10-02T08:50:19Z,custom,python-frida-git,updated,17.19.0.r0.g63b3233-1,17.20.0.r0.ge37e73e-1
