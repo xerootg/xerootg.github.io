@@ -372,3 +372,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-08T02:30:11Z,custom,claude-desktop,updated,2.9939.4-1,2.26454.2-1
 2026-10-08T02:30:11Z,custom,cline-cli,updated,3.0.68-1,3.0.69-1
 2026-10-08T02:30:11Z,custom,visual-studio-code-bin,updated,1.140.0-1,1.140.0-2
+2026-10-08T08:55:42Z,custom,ilspy-git,updated,v11.1.r85.g7a56e5d9e-1,v11.1.r88.gaccbd3eda-1
+2026-10-08T08:55:42Z,custom,python-frida-git,updated,17.22.2.r0.g324ee3a-1,17.23.0.r0.g81b38c4-1
+2026-10-08T08:55:42Z,custom,rapidraw-git,updated,1.6.5.r1.g8387fc1-1,1.6.5.r10.g285a4f1-1
