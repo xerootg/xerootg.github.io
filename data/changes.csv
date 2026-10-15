@@ -404,3 +404,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-15T02:09:22Z,custom,claude-desktop,updated,2.31226.1-1,2.37337.1-1
 2026-10-15T02:09:22Z,custom,python-google-genai,updated,2.29.0-1,2.30.1-1
 2026-10-15T02:09:22Z,custom,visual-studio-code-bin,updated,1.141.1-1,1.141.2-1
+2026-10-15T08:51:10Z,custom,ilspy-git,updated,v11.1.r146.gf3a14bd55-1,v11.1.r149.gdad8a25ed-1
+2026-10-15T08:51:10Z,custom,rapidraw-git,updated,1.6.5.r25.g74597d0-1,1.6.5.r30.g3385c9f-1
