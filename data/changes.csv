@@ -411,3 +411,12 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-16T02:25:13Z,custom,python-google-genai,updated,2.30.1-1,2.31.0-1
 2026-10-16T02:25:13Z,custom,snapd,updated,2.77.1-1,2.78-1
 2026-10-16T02:25:13Z,custom,visual-studio-code-bin,updated,1.141.2-1,1.142.0-1
+2026-10-16T08:49:57Z,custom,claude-code,updated,2.1.301-1,2.1.300-1
+2026-10-16T08:49:57Z,custom,claude-desktop,updated,2.42304.0-1,2.37337.1-1
+2026-10-16T08:49:57Z,custom,ggml-sycl-f32-git,updated,r4866.3612c0a-1,r4995.a05c992-1
+2026-10-16T08:49:57Z,custom,ilspy-git,updated,v11.1.r149.gdad8a25ed-1,v11.1.r146.gf3a14bd55-1
+2026-10-16T08:49:57Z,custom,python-frida-git,updated,17.23.3.r0.g3c7ea15-1,17.23.3.r7.gb923975-1
+2026-10-16T08:49:57Z,custom,python-google-genai,updated,2.31.0-1,2.30.1-1
+2026-10-16T08:49:57Z,custom,rapidraw-git,updated,1.6.5.r30.g3385c9f-1,1.6.5.r50.ge90a9bb-1
+2026-10-16T08:49:57Z,custom,snapd,updated,2.78-1,2.77.1-1
+2026-10-16T08:49:57Z,custom,visual-studio-code-bin,updated,1.142.0-1,1.141.2-1
