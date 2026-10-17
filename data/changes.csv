@@ -420,3 +420,9 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-16T08:49:57Z,custom,rapidraw-git,updated,1.6.5.r30.g3385c9f-1,1.6.5.r50.ge90a9bb-1
 2026-10-16T08:49:57Z,custom,snapd,updated,2.78-1,2.77.1-1
 2026-10-16T08:49:57Z,custom,visual-studio-code-bin,updated,1.142.0-1,1.141.2-1
+2026-10-17T01:54:02Z,custom,claude-code,updated,2.1.300-1,2.1.302-1
+2026-10-17T01:54:02Z,custom,claude-desktop,updated,2.37337.1-1,2.42304.0-1
+2026-10-17T01:54:02Z,custom,cline-cli,updated,3.0.71-1,3.0.72-1
+2026-10-17T01:54:02Z,custom,python-google-genai,updated,2.30.1-1,2.31.0-1
+2026-10-17T01:54:02Z,custom,snapd,updated,2.77.1-1,2.78-1
+2026-10-17T01:54:02Z,custom,visual-studio-code-bin,updated,1.141.2-1,1.142.0-1
