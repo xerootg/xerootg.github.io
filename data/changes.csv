@@ -426,3 +426,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-17T01:54:02Z,custom,python-google-genai,updated,2.30.1-1,2.31.0-1
 2026-10-17T01:54:02Z,custom,snapd,updated,2.77.1-1,2.78-1
 2026-10-17T01:54:02Z,custom,visual-studio-code-bin,updated,1.141.2-1,1.142.0-1
+2026-10-17T08:46:06Z,custom,ilspy-git,updated,v11.1.r146.gf3a14bd55-1,v11.1.r165.g74503ff87-1
+2026-10-17T08:46:06Z,custom,llama.cpp-sycl-f32-git,updated,b11434-1,b11706-1
+2026-10-17T08:46:06Z,custom,python-frida-git,updated,17.23.3.r7.gb923975-1,17.24.0.r0.g2ff8f72-1
+2026-10-17T08:46:06Z,custom,rapidraw-git,updated,1.6.5.r50.ge90a9bb-1,1.6.5.r66.g6edfb44-1
