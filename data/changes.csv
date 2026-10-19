@@ -437,3 +437,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-19T02:25:43Z,custom,claude-code,updated,2.1.302-1,2.1.303-1
 2026-10-19T02:25:43Z,custom,cline-cli,updated,3.0.72-1,3.0.73-1
 2026-10-19T02:25:43Z,custom,python-anthropic,updated,1.13.0-1,1.15.0-1
+2026-10-19T08:54:57Z,custom,ilspy-git,updated,v11.1.r176.g6d5b5fe09-1,v11.1.r198.g0abb04db6-1
+2026-10-19T08:54:57Z,custom,llama.cpp-sycl-f32-git,updated,b11718-1,b11723-1
+2026-10-19T08:54:57Z,custom,python-frida-git,updated,17.24.1.r0.g4bd95e6-1,17.24.2.r0.gc7f9ae3-1
+2026-10-19T08:54:57Z,custom,rapidraw-git,updated,1.6.5.r82.gb39884b-1,1.6.6.r2.g6e2631a-1
