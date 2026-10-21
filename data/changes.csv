@@ -444,3 +444,5 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-20T02:22:51Z,custom,claude-code,updated,2.1.303-1,2.1.304-1
 2026-10-20T02:22:51Z,custom,claude-desktop,updated,2.42304.0-1,2.42304.2-1
 2026-10-20T04:52:27Z,ghidra,ghidra-ext-xstormy16,added,,1.1.0-2
+2026-10-21T02:39:40Z,custom,claude-code,updated,2.1.304-1,2.1.305-1
+2026-10-21T02:39:40Z,custom,claude-desktop,updated,2.42304.2-1,3.1623.0-1
