@@ -461,3 +461,9 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-22T05:36:26Z,custom,ilspy-git,updated,v11.1.r220.gb9da96713-1,v11.1.r198.g0abb04db6-1
 2026-10-22T05:36:26Z,custom,llama.cpp-sycl-f32-git,updated,b11783-1,b11723-1
 2026-10-22T05:36:26Z,custom,rapidraw-git,updated,1.6.6.r20.g07f1b60-1,1.6.6.r25.gd2b3ff4-1
+2026-10-23T04:57:59Z,custom,claude-code,updated,2.1.305-1,2.1.309-1
+2026-10-23T04:57:59Z,custom,claude-desktop,updated,3.1623.0-1,3.6556.1-1
+2026-10-23T04:57:59Z,custom,powershell,updated,7.6.6-1,7.6.8-1
+2026-10-23T04:57:59Z,custom,python-beartype,updated,0.22.9-4,0.23.1-1
+2026-10-23T04:57:59Z,custom,python-cyclopts,updated,4.21.0-1,5.3.0-1
+2026-10-23T04:57:59Z,custom,visual-studio-code-bin,updated,1.142.0-1,1.143.0-1
