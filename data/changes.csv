@@ -482,3 +482,6 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-27T08:54:27Z,custom,ggml-sycl-f32-git,updated,r4998.da8e2a5-1,r4995.a05c992-1
 2026-10-27T08:54:27Z,custom,ilspy-git,updated,v11.1.r259.g84ee81295-1,v11.1.r268.gc86190ef4-1
 2026-10-27T08:54:27Z,custom,rapidraw-git,updated,1.6.7.r1.gd30a65a-1,1.6.6.r77.g07361a0-1
+2026-10-28T08:43:02Z,custom,ggml-sycl-f32-git,updated,r4995.a05c992-1,r4998.da8e2a5-1
+2026-10-28T08:43:02Z,custom,ilspy-git,updated,v11.1.r268.gc86190ef4-1,v11.2.r2.gb42d3fb43-1
+2026-10-28T08:43:02Z,custom,rapidraw-git,updated,1.6.6.r77.g07361a0-1,1.6.7.r10.gbd509d6-1
