@@ -492,3 +492,7 @@ timestamp_utc,repo,pkgname,event,from_version,to_version
 2026-10-30T08:42:29Z,custom,ilspy-git,updated,v11.1.r268.gc86190ef4-1,v11.2.r2.gb42d3fb43-1
 2026-10-30T08:42:29Z,custom,python-frida-git,updated,17.24.3.r12.g55e4c51-1,17.24.3.r15.g6cf9b0b-1
 2026-10-30T08:42:29Z,custom,rapidraw-git,updated,1.6.7.r31.g5fb4c29-1,1.6.7.r57.g69449db-1
+2026-10-31T08:42:49Z,custom,ggml-sycl-f32-git,updated,r4998.da8e2a5-1,r5127.facdc44-1
+2026-10-31T08:42:49Z,custom,ilspy-git,updated,v11.2.r2.gb42d3fb43-1,v11.2.r13.g40a7d46de-1
+2026-10-31T08:42:49Z,custom,python-frida-git,updated,17.24.3.r15.g6cf9b0b-1,17.25.0.r3.gb61bf28-1
+2026-10-31T08:42:49Z,custom,rapidraw-git,updated,1.6.7.r57.g69449db-1,1.6.7.r63.g60ed513-1
